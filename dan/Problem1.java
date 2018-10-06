@@ -20,12 +20,12 @@ public class Problem1 {
                         pointer1 = 0;
                         break;
                     }
+                    if(match==original.length()){return "They are positional.";}
                 }
             }
             else {
                 pointer2 = (pointer2 + 1) % test.length();
             }
-            if(match==original.length()){return "They are positional.";}
         }
         return "They are not positional.";
     }
@@ -41,11 +41,5 @@ public class Problem1 {
             System.out.println("Try again? y/n");
             ask=scan.next();
         }
-
-
-
-
-
-
     }
 }
